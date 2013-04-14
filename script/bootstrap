@@ -31,10 +31,8 @@ setup_gitconfig () {
   then
     info 'setup gitconfig'
 
-    user ' - What is your github author name?'
-    read -e git_authorname
-    user ' - What is your github author email?'
-    read -e git_authoremail
+    git_authorname="Dave Osborne"
+    git_authoremail="osborne.dave@gmail.com"
 
     sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" git/gitconfig.symlink.example > git/gitconfig.symlink
 
