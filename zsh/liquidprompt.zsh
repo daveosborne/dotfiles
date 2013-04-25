@@ -1,3 +1,4 @@
+
 ################################################################################
 # LIQUID PROMPT
 # An intelligent and non intrusive prompt for bash and zsh
@@ -46,6 +47,8 @@
 # See the README.md file for a summary of features.
 
 # Check for recent enough version of bash.
+emulate sh
+
 if test -n $BASH_VERSION -a -n $PS1 -a -n $TERM ; then
     bash=${BASH_VERSION%.}; bmajor=${bash%.}; bminor=${bash#.}
     if [[ $bmajor -lt 3 ]]  [[ $bmajor -eq 3 && $bminor -lt 2 ]]; then
