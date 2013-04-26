@@ -31,7 +31,7 @@ LP_PATH_KEEP=2
 # Do you want to display the hostname, even if not connected through network?
 # Defaults to 0 (do not display hostname when localy connected)
 # set to 1 if you want to always see the hostname
-LP_HOSTNAME_ALWAYS=0
+LP_HOSTNAME_ALWAYS=1
 
 # Do you want to display the user, even if he is the same than the logged one?
 # Defaults to 1 (always display the user)
@@ -53,7 +53,7 @@ LP_ENABLE_SHORTEN_PATH=1
 
 # Do you want to use the proxy detection feature ?
 # Recommended value is 1
-LP_ENABLE_PROXY=1
+LP_ENABLE_PROXY=0
 
 # Do you want to use the jobs feature ?
 # Recommended value is 1
@@ -65,7 +65,7 @@ LP_ENABLE_LOAD=1
 
 # Do you want to use the batt feature ?
 # Recommended value is 1
-LP_ENABLE_BATT=1
+LP_ENABLE_BATT=0
 
 # Do you want to use vcs features with root account
 # Recommended value is 0
@@ -81,15 +81,15 @@ LP_ENABLE_SVN=1
 
 # Do you want to use the mercurial special features ?
 # Recommended value is 1
-LP_ENABLE_HG=1
+LP_ENABLE_HG=0
 
 # Do you want to use the fossil special features ?
 # Recommended value is 1
-LP_ENABLE_FOSSIL=1
+LP_ENABLE_FOSSIL=0
 
 # Do you want to use the bzr special features ?
 # Recommanded value is 1
-LP_ENABLE_BZR=1
+LP_ENABLE_BZR=0
 
 # Show time of the last prompt display
 # Recommended value is 0
@@ -120,4 +120,3 @@ LP_ENABLE_SSH_COLORS=0
 LP_DISABLED_VCS_PATH=""
 
 # vim: set et sts=4 sw=4 tw=120 ft=sh:
-
