@@ -106,8 +106,8 @@ case "$LP_OS" in
         ;;
     FreeBSD)
         _lp_cpu_load () {
-            local bol load eol
-            read bol load eol < $<( LANG=C sysctl -n vm.loadavg | awk '{print $2}' )
+            local load
+            load=$(LANG=C sysctl -n vm.loadavg | awk '{print $2}')
             echo "$load"
         }
         ;;
