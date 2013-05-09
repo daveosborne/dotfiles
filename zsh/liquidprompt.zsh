@@ -1,4 +1,3 @@
-set –xv
 ################################################################################
 # LIQUID PROMPT
 # An intelligent and non intrusive prompt for bash and zsh
