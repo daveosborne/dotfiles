@@ -127,5 +127,7 @@ then
   fi
 fi
 
+ln -s ~/.dotfiles/vim ~/.vim 
+
 echo ''
 echo '  All installed!'
