@@ -1475,7 +1475,10 @@ _lp_set_prompt()
             [[ "$LP_ENABLE_VCS_ROOT" = "1" ]] && PS1="${PS1}${LP_VCS}"
         fi
         # add return code and prompt mark
-        PS1="${PS1}${LP_ERR}${LP_MARK}"
+        LINE1_PREFIX="${LP_COLOR_IN_MULTIPLEXER}╔${NO_COL}"
+        LINE2_PREFIX="${LP_COLOR_IN_MULTIPLEXER}╚${NO_COL}"
+        PS1="${LINE1_PREFIX}${PS1}
+${LINE2_PREFIX}${LP_ERR}${LP_MARK}${LP_COLOR_IN_MULTIPLEXER} 𝀉  ${NO_COL}"
 
         # "invisible" parts
         # Get the current prompt on the fly and make it a title
