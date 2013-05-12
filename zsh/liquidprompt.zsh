@@ -1477,8 +1477,8 @@ _lp_set_prompt()
         # add return code and prompt mark
         LINE1_PREFIX="${LP_COLOR_IN_MULTIPLEXER}╔${NO_COL}"
         LINE2_PREFIX="${LP_COLOR_IN_MULTIPLEXER}╚${NO_COL}"
-        PS1="${LINE1_PREFIX}${PS1}
-${LINE2_PREFIX}${LP_ERR}${LP_MARK}${LP_COLOR_IN_MULTIPLEXER} 𝀉  ${NO_COL}"
+        PS1="${LINE1_PREFIX}${PS1}${LP_MARK}
+${LP_COLOR_IN_MULTIPLEXER}${LINE2_PREFIX}${LP_ERR} ${LP_COLOR_IN_MULTIPLEXER}∞𝔻 ${NO_COL}"
 
         # "invisible" parts
         # Get the current prompt on the fly and make it a title
