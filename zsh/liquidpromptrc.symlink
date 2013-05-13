@@ -14,11 +14,11 @@ source ~/.dotfiles/zsh/liquidprompt.theme
 
 # Maximal value under which the battery level is displayed
 # Recommended value is 75
-LP_BATTERY_THRESHOLD=90
+LP_BATTERY_THRESHOLD=95
 
 # Minimal value after which the load average is displayed
 # Recommended value is 60
-LP_LOAD_THRESHOLD=40
+LP_LOAD_THRESHOLD=10
 
 # The maximum percentage of the screen width used to display the path
 # Recommended value is 35
