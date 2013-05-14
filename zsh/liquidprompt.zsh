@@ -145,15 +145,10 @@ _lp_source_config()
     local ti_sgr0="$( { tput sgr0 || tput me ; } 2>/dev/null )"
     local ti_bold="$( { tput bold || tput md ; } 2>/dev/null )"
     local ti_setaf
-    if tput setaf >/dev/null 2>&1 ; then
-        ti_setaf () { tput setaf "$1" ; }
-    elif tput AF >/dev/null 2>&1 ; then
-        # *BSD
-        ti_setaf () { tput AF "$1" ; }
-    else
-        echo "liquidprompt: terminal $TERM not supported" >&2
-        ti_setaf () { : ; }
-    fi
+    case $LP_OS in
+        Linux) ti_setaf () { tput setaf "$1" ; } ;;
+        FreeBSD) ti_setaf () { tput AF "$1" ; } ;;
+    esac
 
     # Colors: variables are local so they will have a value only
     # during config loading and will not conflict with other values
