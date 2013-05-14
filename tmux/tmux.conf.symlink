@@ -2,7 +2,7 @@ unbind C-b
 set -g prefix C-a
 bind-key C-a last-window
 bind-key C-b next-window
-set -g default-terminal screen-256color
+set -g default-terminal xterm-256color
 set -g history-limit 2000
 set -g base-index 1
 set -s escape-time 0
