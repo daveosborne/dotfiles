@@ -1,7 +1,19 @@
+
+case $(uname) in
+    FreeBSD)   LP_OS=FreeBSD ;;
+    DragonFly) LP_OS=FreeBSD ;;
+    Darwin)    LP_OS=Darwin  ;;
+    SunOS)     LP_OS=SunOS   ;;
+    *)         LP_OS=Linux   ;;
+esac
+
 # base aliases
 alias reload!='. ~/.zshrc'
 alias less='less -R' # -R preserves ANSI color escape sequences in output
-alias ls='ls --color -l'
+case $LP_OS in
+  FreeBSD)    alias ls='ls -G -l'       ;;
+  Linux)      alias ls='ls --color -l'  ;;
+esac
 alias grep='grep --color'
 alias ff='find . -type f -name' # fast find
 alias tmux='tmux -2'
