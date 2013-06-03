@@ -14,9 +14,14 @@ case $LP_OS in
   FreeBSD)    alias ls='ls -G -lh'       ;;
   Linux)      alias ls='ls --color -lh'  ;;
 esac
+alias l='ls'
 alias grep='grep --color'
 alias ff='find . -type f -name' # fast find
 alias tmux='tmux -2'
+alias peg='ps -ef |grep -i'
+alias h1g='history 1 |grep -i'
+alias df='df -h'
+alias du='du -h'
 
 # apt aliases
 alias apti='sudo apt-get install'

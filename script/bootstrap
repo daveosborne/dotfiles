@@ -128,6 +128,10 @@ then
 fi
 
 ln -s ~/.dotfiles/vim ~/.vim 
+if [ "$(uname -s)" == "Linux" ]
+then
+  sudo ln -s ~/.dotfiles/tmux/persist/tmux-persist.cron /etc/cron.d/tmux-persist
+fi
 
 echo ''
 echo '  All installed!'
