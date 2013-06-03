@@ -11,8 +11,8 @@ esac
 alias reload!='. ~/.zshrc'
 alias less='less -R' # -R preserves ANSI color escape sequences in output
 case $LP_OS in
-  FreeBSD)    alias ls='ls -G -l'       ;;
-  Linux)      alias ls='ls --color -l'  ;;
+  FreeBSD)    alias ls='ls -G -lh'       ;;
+  Linux)      alias ls='ls --color -lh'  ;;
 esac
 alias grep='grep --color'
 alias ff='find . -type f -name' # fast find
