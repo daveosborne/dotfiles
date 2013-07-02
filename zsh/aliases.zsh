@@ -22,6 +22,7 @@ alias peg='ps -ef |grep -i'
 alias h1g='history 1 |grep -i'
 alias df='df -h'
 alias du='du -h'
+alias ssh='ssh -C'
 
 # apt aliases
 alias apti='sudo apt-get install'
