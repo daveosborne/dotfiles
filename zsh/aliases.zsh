@@ -11,12 +11,18 @@ esac
 alias reload!='. ~/.zshrc'
 alias less='less -R' # -R preserves ANSI color escape sequences in output
 case $LP_OS in
-  FreeBSD)    alias ls='ls -G -l'       ;;
-  Linux)      alias ls='ls --color -l'  ;;
+  FreeBSD)    alias ls='ls -G -lh'       ;;
+  Linux)      alias ls='ls --color -lh'  ;;
 esac
+alias l='ls'
 alias grep='grep --color'
 alias ff='find . -type f -name' # fast find
 alias tmux='tmux -2'
+alias peg='ps -ef |grep -i'
+alias h1g='history 1 |grep -i'
+alias df='df -h'
+alias du='du -h'
+alias ssh='ssh -C'
 
 # apt aliases
 alias apti='sudo apt-get install'
