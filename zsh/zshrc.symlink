@@ -41,4 +41,5 @@ do
   source $file
 done
 
+bindkey -e
 unset config_files
