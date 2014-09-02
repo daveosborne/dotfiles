@@ -7,6 +7,7 @@ export PROJECTS=~/Code
 #
 export TERM=screen-256color
 export EDITOR=vim
+bindkey -e
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.

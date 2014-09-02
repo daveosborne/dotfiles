@@ -40,7 +40,8 @@ alias push='git push origin'
 alias pull='git pull'
 alias branch='git checkout'
 
-alias docker='sudo docker'
+# docker
+alias docker='sudo -E docker'
 alias dps='docker ps'
 alias di='docker images'
 alias drm='docker rm'
