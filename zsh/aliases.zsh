@@ -23,6 +23,7 @@ alias h1g='history 1 |grep -i'
 alias df='df -h'
 alias du='du -h'
 alias ssh='ssh -C'
+alias colordiff='colordiff |less'
 
 # apt aliases
 alias apti='sudo apt-get install'
@@ -35,10 +36,10 @@ alias gits='git status'
 alias gitd='git diff'
 alias gita='git add'
 alias gitc='git commit'
-alias grm='git rm'
 alias push='git push origin'
 alias pull='git pull'
-alias branch='git checkout'
+alias gitb='git branch'
+alias gitch='git checkout'
 
 # docker
 alias docker='sudo -E docker'
