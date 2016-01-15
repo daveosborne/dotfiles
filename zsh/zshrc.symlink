@@ -7,7 +7,6 @@ export PROJECTS=~/Code
 #
 export TERM=screen-256color
 export EDITOR=vim
-bindkey -e
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -42,5 +41,11 @@ do
   source $file
 done
 
-bindkey -e
+bindkey -v
+
+bindkey '^r' history-incremental-search-backward
+export KEYTIMEOUT=1
+
 unset config_files
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

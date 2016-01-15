@@ -42,7 +42,6 @@ alias gitb='git branch'
 alias gitch='git checkout'
 
 # docker
-alias docker='sudo -E docker'
 alias dps='docker ps'
 alias di='docker images'
 alias dr='docker run'
@@ -51,3 +50,4 @@ alias drmi='docker rmi'
 alias dk='docker kill'
 alias dlog='docker log'
 alias db='docker build'
+
