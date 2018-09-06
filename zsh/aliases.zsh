@@ -31,16 +31,6 @@ alias apts='sudo apt-cache search'
 alias aptp='sudo apt-cache policy'
 alias aptu='sudo apt-get update && sudo apt-get upgrade'
 
-# git aliases
-alias gits='git status'
-alias gitd='git diff'
-alias gita='git add'
-alias gitc='git commit'
-alias push='git push origin'
-alias pull='git pull'
-alias gitb='git branch'
-alias gitch='git checkout'
-
 # docker
 alias dps='docker ps'
 alias di='docker images'
@@ -51,3 +41,5 @@ alias dk='docker kill'
 alias dlog='docker log'
 alias db='docker build'
 
+alias gob='go test -bench . -run none ./...'
+alias got='go test -run . ./...'

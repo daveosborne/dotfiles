@@ -48,4 +48,8 @@ export KEYTIMEOUT=1
 
 unset config_files
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/usr/local/node/bin:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "/home/dave/.gvm/scripts/gvm" ]] && source "/home/dave/.gvm/scripts/gvm"
+gvm use go1.11
+export GOPATH=/home/dave/go
