@@ -48,8 +48,18 @@ export KEYTIMEOUT=1
 
 unset config_files
 
-export PATH="$PATH:/usr/local/node/bin:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Add RVM to PATH for scripting
+export PATH="$HOME/.cargo/bin:$PATH:/usr/local/node/bin:$HOME/.rvm/bin" 
 
 [[ -s "/home/dave/.gvm/scripts/gvm" ]] && source "/home/dave/.gvm/scripts/gvm"
 gvm use go1.11
 export GOPATH=/home/dave/go
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
+
+ssh-add ~/.ssh/do_id_rsa.pem
+ssh-add ~/.ssh/cif.pem
+ssh-add ~/.ssh/tasks-server.pem
+ssh-add ~/.ssh/ad-server.pem
+
